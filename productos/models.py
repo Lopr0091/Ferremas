@@ -1,5 +1,9 @@
 from django.db import models
+from categoria.models import categoria
 class Producto(models.Model):
-    nombre = models.CharField(max_length=100)
-    descripcion = models.TextField()
-    precio = models.IntegerField()
+    id_producto = models.IntegerField()
+    nombre_producto = models.CharField(max_length=100)
+    descripcion_producto = models.TextField()
+    precio_producto = models.IntegerField()
+    stock_producto = models.IntegerField()
+    

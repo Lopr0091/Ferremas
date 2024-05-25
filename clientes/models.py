@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class cliente (models.Model):
+    id_cliente = models.IntegerField()
+    nombre_cliente = models.CharField()
